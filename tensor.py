@@ -2,7 +2,6 @@ class Tensor():
     def __init__(self, data, shape):
         self.data = data
         self.shape = shape
-        self.tensor = ...
 
     def shape_data(self):
         # outputs an empty list if shape is an empty list
