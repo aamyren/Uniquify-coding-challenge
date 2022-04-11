@@ -19,22 +19,22 @@ class Tensor():
         # calculates dimension of the tensor
         dim = 1
         for j in self.shape:
-          dim = dim * j
+            dim = dim * j
         # stores data in data_list and modified according to specified dimensions
         data_list = self.data
         #if not enough data numbers, pad tensor w/ 0s
         if len(self.data) < dim:
-          for i in range(dim - len(self.data)):
-            data_list.append(0)
+            for i in range(dim - len(self.data)):
+                data_list.append(0)
         #if too many data numbers, cut off after tensor fills up
         elif len(self.data) >= dim:
-          del data_list[dim:]
+            del data_list[dim:]
 
         # slices the data list into groups specified by shape, starting with the last index
         # the loop repeats for each data point (excluding the first b/c dimension has already been accounted for)
         # updates the sliced list every iteration
         for j in range(1, len(self.shape)):
-          data_list = ([data_list[x:x+self.shape[-1*j]] for x in range(0, len(data_list), self.shape[-1*j])])
+            data_list = ([data_list[x:x+self.shape[-1*j]] for x in range(0, len(data_list), self.shape[-1*j])])
 
         #prints the constructed tensor
         print(data_list)
