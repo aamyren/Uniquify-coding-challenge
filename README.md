@@ -1,5 +1,5 @@
-## Uniqify-coding-challenge ##
 #### Amy Ren ####
+## Uniqify-coding-challenge ##
 pre-interview coding challenge for Uniqify
 
 ### Coding Challenge: ###
