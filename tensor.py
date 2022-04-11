@@ -10,7 +10,7 @@ class Tensor():
             return []
         # make sure data is int or float, and shape is a list of positive integers
         for s in self.shape:
-            if type(s) != int or s<1:
+            if type(s) != int or s < 1:
                 print('Shape needs to be a list of positive integers')
                 return
         for d in self.data:
