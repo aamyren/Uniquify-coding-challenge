@@ -41,7 +41,7 @@ class Tensor():
         print(data_list)
 
 # example 1
-data0 =  [0, 1, 2, 3, 4, 5, 0.1, 0.2, -3, -2, -1, 3, 2, 1]
+data0 =  [0, 1, 2, 3, 4, 5, 0.1, 0.2, -3]
 shape0 = [2, 3, 2]
 tensor0 = Tensor(data0, shape0)
 # example 1 output
