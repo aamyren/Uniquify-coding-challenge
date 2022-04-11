@@ -49,7 +49,7 @@ Tensor.shape_data(tensor0)
 
 # example 2
 data1 = [0, 1, 2, 3, 4, 5, 0.1, 0.2, -3, -2, -1, 3, 2, 1]
-shape1 = [1, 2]
+shape1 = [5, 2]
 tensor1 = Tensor(data1, shape1)
 # example 2 output
 Tensor.shape_data(tensor1)
