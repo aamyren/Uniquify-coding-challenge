@@ -14,7 +14,7 @@ class Tensor():
                 print('Shape needs to be a list of positive integers')
                 return
         for d in self.data:
-            if type(d) !=int and type(d) != float:
+            if type(d) != int and type(d) != float:
                 print('Data needs to be a number (int or float)')
                 return
         # calculates dimension of the tensor
